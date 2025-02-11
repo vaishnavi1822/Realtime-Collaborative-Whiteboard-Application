@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Collaborative Whiteboard - application</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div>
+                <button class="pen-color" id="black" aria-label="name"></button>
+                <button class="pen-color" id="gray" aria-label="name"></button>
+                <button class="pen-color" id="light-gray" aria-label="name"></button>
+                <button class="pen-color" id="pink" aria-label="name"></button>
+                <button class="pen-color" id="orange" aria-label="name"></button>
+                <button class="pen-color" id="yellow" aria-label="name"></button>
+                <button class="pen-color" id="gold" aria-label="name"></button>
+                <button class="pen-color" id="red" aria-label="name"></button>
+                <button class="pen-color" id="darkred" aria-label="name"></button>
+                <button class="pen-color" id="brown" aria-label="name"></button>
+                <button class="pen-color" id="purple" aria-label="name"></button>
+                <button class="pen-color" id="blueviolet" aria-label="name"></button>
+                <button class="pen-color" id="blue" aria-label="name"></button>
+                <button class="pen-color" id="turquoise" aria-label="name"></button>
+                <button class="pen-color" id="green" aria-label="name"></button>
+                <button class="pen-color" id="lime" aria-label="name"></button>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pen-thickness">
+                <label class="thickness" for="thickness">Pen Thickness:</label>
+                <select id="thickness">
+                    <option value="2">Thin</option>
+                    <option value="5">Medium</option>
+                    <option value="8">Thick</option>
+                </select>
+            </div>
+
+            <div class="line"></div>
+
+            <button aria-label="name" id="clear-canvas" class="btn-clear">Clear Canvas</button>
+        </div>
+        <canvas id="whiteboard" width="1000" height="600"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

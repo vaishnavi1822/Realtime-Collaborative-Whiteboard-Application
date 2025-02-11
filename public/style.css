@@ -1,0 +1,140 @@
+#black{ 
+    background: #000;
+}
+#blue{
+    background: blue;
+}
+#blueviolet{
+    background: blueviolet;
+}
+#red{
+    background: red;
+}
+#light-gray{
+    background: lightgray;
+}
+#darkred{
+    background: darkred;
+}
+#green{
+    background: green;
+}
+#turquoise{
+    background: turquoise;
+}
+#pink{
+    background: pink;
+}
+#purple{
+    background: purple;
+}
+#lavender{
+    background: lavender;
+}
+#gray{
+    background: gray;
+}
+#brown{
+    background: rgba(165, 42, 42, 0.829);
+}
+#orange{
+    background: orange;
+}
+#yellow{
+    background: yellow;
+}
+#gold{
+    background: gold;
+}
+#lime{
+    background: lime;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fb;
+  }
+  
+  .container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .line{
+    margin-top: 20px;
+    border: 1px solid gray;
+  }
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 160px;
+  }
+  
+  button.pen-color {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button.pen-color:hover {
+    opacity: 0.8;
+  }
+  
+  .pen-thickness {
+    margin-top: 15px;
+  }
+
+  select {
+    padding: 5px;
+    width: 80%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #clear-canvas {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  #clear-canvas:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Canvas Styles */
+  #whiteboard {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
